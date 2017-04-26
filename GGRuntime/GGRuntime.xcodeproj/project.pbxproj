@@ -13,6 +13,8 @@
 		5D6636A51EAF5AAD00615DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D6636A31EAF5AAD00615DE4 /* Main.storyboard */; };
 		5D6636A71EAF5AAD00615DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6636A61EAF5AAD00615DE4 /* Assets.xcassets */; };
 		5D6636AA1EAF5AAD00615DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D6636A81EAF5AAD00615DE4 /* LaunchScreen.storyboard */; };
+		5DA188311EB01FA200C0B5ED /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA188301EB01FA200C0B5ED /* person.m */; };
+		5DA188351EB0281800C0B5ED /* UIImage+GGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA188341EB0281800C0B5ED /* UIImage+GGImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		5D6636A61EAF5AAD00615DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D6636A91EAF5AAD00615DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D6636AB1EAF5AAD00615DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA1882F1EB01FA200C0B5ED /* person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		5DA188301EB01FA200C0B5ED /* person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		5DA188331EB0281800C0B5ED /* UIImage+GGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GGImage.h"; path = "category/UIImage+GGImage.h"; sourceTree = "<group>"; };
+		5DA188341EB0281800C0B5ED /* UIImage+GGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GGImage.m"; path = "category/UIImage+GGImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,9 @@
 		5D66368E1EAF5AAD00615DE4 = {
 			isa = PBXGroup;
 			children = (
+				5DA188321EB0279500C0B5ED /* category */,
+				5DA1882F1EB01FA200C0B5ED /* person.h */,
+				5DA188301EB01FA200C0B5ED /* person.m */,
 				5D6636991EAF5AAD00615DE4 /* GGRuntime */,
 				5D6636981EAF5AAD00615DE4 /* Products */,
 			);
@@ -77,6 +86,15 @@
 				5D66369B1EAF5AAD00615DE4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DA188321EB0279500C0B5ED /* category */ = {
+			isa = PBXGroup;
+			children = (
+				5DA188331EB0281800C0B5ED /* UIImage+GGImage.h */,
+				5DA188341EB0281800C0B5ED /* UIImage+GGImage.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +171,8 @@
 			files = (
 				5D6636A21EAF5AAD00615DE4 /* ViewController.m in Sources */,
 				5D66369F1EAF5AAD00615DE4 /* AppDelegate.m in Sources */,
+				5DA188311EB01FA200C0B5ED /* person.m in Sources */,
+				5DA188351EB0281800C0B5ED /* UIImage+GGImage.m in Sources */,
 				5D66369C1EAF5AAD00615DE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SEU5523G5C;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = GGRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingApps.GGRuntime;
@@ -288,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SEU5523G5C;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = GGRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingApps.GGRuntime;
@@ -314,6 +336,7 @@
 				5D6636B01EAF5AAD00615DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
