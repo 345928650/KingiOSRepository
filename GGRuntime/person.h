@@ -10,6 +10,8 @@
 
 @interface person : NSObject
 
+- (void) eat:(NSNumber *)num;
+
 - (void) eat;
 
 + (void) classeat;

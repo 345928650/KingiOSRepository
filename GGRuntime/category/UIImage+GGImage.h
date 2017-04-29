@@ -10,6 +10,10 @@
 
 @interface UIImage (GGImage)
 
+@property (strong, nonatomic) NSString * name;
+
+
+//自定义的方法
 + (__kindof UIImage *) gg_imageName:(NSString *)imageName;
 
 @end

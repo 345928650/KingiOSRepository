@@ -25,9 +25,27 @@
     //获取对象方法
 //    class_getInstanceMethod(<#__unsafe_unretained Class cls#>, <#SEL name#>)
     
-    [self methodChangeIementations];
+    //交换两个方法实现
+//    [self methodChangeIementations];
 }
 
+
+//用runtime 添加属性
+- (void) setName:(NSString *)name{
+
+    //给某个对象产生关联，添加属性
+    //object:给那个对象添加属性
+    //key:属性名，根据key去获取关联的对象 void * = id
+    //value：关联的值
+    //policy:策略，引用方式
+    objc_setAssociatedObject(self, @"name", name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//    _name = name;
+}
+
+
+- (NSString *)name{
+    return objc_getAssociatedObject(self, @"name");
+}
 
 //交换imageNamed:和 gg_imageName:
 + (void) methodChangeIementations{
